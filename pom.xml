@@ -1,5 +1,31 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+<project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <updatePolicy>never</updatePolicy>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <name>Central Repository</name>
+            <url>https://repo.maven.apache.org/maven2</url>
+            <layout>default</layout>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    
+     <modelVersion>4.0.0</modelVersion>
 
 	<groupId>cc.protea.foundation</groupId>
 	<artifactId>vimeo</artifactId>
@@ -11,7 +37,7 @@
 	<url>https://github.com/clickntap/Vimeo</url>
 
 	<prerequisites>
-		<maven>3.0.3</maven>
+		<maven>3.6.3</maven>
 	</prerequisites>
 
 	<properties>
@@ -30,7 +56,7 @@
 	<licenses>
 		<license>
 			<name>MIT License</name>
-			<url>http://www.opensource.org/licenses/mit-license.php</url>
+			<url>https://www.opensource.org/licenses/mit-license.php</url>
 		</license>
 	</licenses>
 
@@ -38,7 +64,7 @@
 		<developer>
 			<name>Tonino Mendicino</name>
 			<email>tonino.mendicino@clickntap.com</email>
-			<url>http://www.clickntap.com</url>
+			<url>https://www.clickntap.com</url>
 			<timezone>+1</timezone>
 			<roles>
 				<role>developer</role>
@@ -76,7 +102,7 @@
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
 			<artifactId>httpclient</artifactId>
-			<version>4.3.6</version>
+			<version>4.5.11</version>
 		</dependency>
 		<dependency>
 			<groupId>org.json</groupId>
